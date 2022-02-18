@@ -96,7 +96,7 @@ header {
     display: flex;
     margin-top: 2rem;
     flex-direction: row;
-    width: 50%;
+    width: 60%;
     height: 200px;
     align-items: center;
     justify-content: space-around;
@@ -197,24 +197,111 @@ header {
 .contato {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
+    height: 400px;
 }
 
 .contato__titulo {
     color: #fff;
     font-weight: normal;
     font-size: 2.6rem;
-    margin: 3rem;
+    padding: 1rem;
 }
 
+.contato__formulario {
+    width: 20rem;
+    height: 10rem;
+}
 
+.contato__formulario___form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    justify-content: space-around;
+}
 
-/* .contato__titulo {
+.contato__formulario___form-input {
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+
+.contato__formulario___form-botao {
+    height: 50px;
+    background-color: var(--cor-principal-escura);
     color: #fff;
-    font-weight: normal;
-    font-size: 3rem;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.contato__formulario___form-botao:hover {
+    background-color: #00FF7F;
+    color: #000;
+    transition: all .8s;
+}
+
+.rodape {
+    height: 3rem;
+    background-color: var(--cor-principal);
+}
+
+.rodape__descricao {
+    color: #000;
     display: flex;
     justify-content: center;
-    margin: 4rem;
-} */
+    align-items: center;
+    font-size: 1.2rem;
+    cursor: default;
+}
+
+/*responsivo*/
+
+@media screen and (width: 0) {
+   
+}
+
+@media screen and (max-width: 911px) {
+    .principal__texto {
+        
+    }
+
+    .principal__imagem___amigos {
+        width: 400px;
+    }
+
+    .sobre__texto___botao {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .section-cards__titulo{
+        font-size: 2.3rem;
+    }
+
+   .sobre__texto___titulo {
+    font-size: 2.3rem;
+   }
+
+   .sobre__texto {
+       font-size: 1.2rem;
+   }
+
+   .sobre__texto___botao{
+       padding: 5px 20px;
+       font-size: 1rem;
+   }
+
+   .sobre__imagem___amigos {
+       width: 280px;
+   }
+
+   .contato__titulo {
+       font-size: 2rem;
+   }
+}
