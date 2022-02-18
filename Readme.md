@@ -1,0 +1,1 @@
+Site desenvolvido para comunidade de pessoas buscando atividades em comum.

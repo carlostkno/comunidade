@@ -1,0 +1,220 @@
+:root {
+    --cor-principal: #00CED1;
+    --cor-principal-escura: #008B8B;
+    --branco: #fff;
+    --preto: #000;
+    --cor-fundo: #1C1C1C;
+    --cor-fundo-claro: #363636;
+}
+
+body {
+    font-family: 'Oswald';
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-fundo);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 5rem;
+}
+
+.logo h1 {
+    color: #fff;
+    font-size: 3rem;
+}
+
+.logo span {
+    color: var(--cor-principal);
+}
+
+.principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+}
+
+.principal__texto h4 {
+    color: var(--branco);
+    font-weight: normal;
+}
+
+.principal__texto h2 {
+    color: var(--branco);
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+.principal__texto___botao {
+    display: flex;
+    background-color: var(--cor-principal);
+    padding: 15px 60px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--preto);
+    font-size: 1.3rem;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.principal__texto___botao:hover {
+    background-color: #00FF7F;
+    transition: all .8s;
+}
+
+.principal__imagem___amigos {
+    width: 500px;
+    height: auto;
+    margin-top: 2rem;
+    margin-left: 5rem;
+    border-radius: 10%;
+}
+
+/*seção de cards*/
+
+.section-cards{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.section-cards__titulo {
+    color: var(--branco);
+    font-weight: normal;
+    font-size: 3rem;
+    margin-bottom: -1.2rem;
+}
+
+.section-cards__assunto {
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: row;
+    width: 50%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.section-cards__assunto p {
+    font-size: 1.4rem;
+    margin-top: 1.6rem;
+    cursor: default;
+}
+
+
+.section-cards__assunto i, p {
+    color: var(--branco);
+}
+
+.section-cards__assunto___viagem {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 3rem;
+    background-color: var(--cor-fundo-claro);
+    border-radius: 10px;
+}
+
+.section-cards__assunto___viagem:hover, .section-cards__assunto___festa:hover, 
+.section-cards__assunto___estudos:hover  {
+    background-color: var(--cor-principal);
+    transition: all .8s;
+}
+
+.section-cards__assunto___festa {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 3rem;
+    background-color: var(--cor-fundo-claro);
+    border-radius: 10px;
+}
+
+.section-cards__assunto___estudos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 3rem;
+    background-color: var(--cor-fundo-claro);
+    border-radius: 10px;
+}
+
+/*sobre quem somos*/
+
+.sobre {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--cor-principal-escura);
+}
+
+.sobre__texto {
+    width: 40%;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.sobre__texto___titulo {
+    color: var(--branco);
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.sobre__texto___botao {
+    display: inline-block;
+    background-color: #DCDCDC;
+    padding: 15px 60px;
+    margin-top: .5rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--cor-fundo-claro);
+    font-size: 1.3rem;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.sobre__texto___botao:hover {
+    background-color: #00FF7F;
+    transition: all .8s;
+}
+
+.sobre__imagem___amigos {
+    width: 350px;
+    height: auto;
+    padding: 1rem;
+}
+
+/*Área de contato*/
+
+.contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contato__titulo {
+    color: #fff;
+    font-weight: normal;
+    font-size: 2.6rem;
+    margin: 3rem;
+}
+
+
+
+/* .contato__titulo {
+    color: #fff;
+    font-weight: normal;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    margin: 4rem;
+} */
