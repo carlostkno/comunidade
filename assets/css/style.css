@@ -261,16 +261,101 @@ header {
 
 /*responsivo*/
 
-@media screen and (width: 0) {
-   
+@media screen and (max-width: 738px) {
+
+@media screen and (max-width: 753px) {
+
+    .section-cards {
+        display: flex;
+        justify-content: flex-start;
+        height: 700px;
+    }
+
+    .section-cards__titulo {
+        font-size: 1.4;
+    }
+
+    .section-cards__assunto {
+       display: flex;
+       flex-direction: column;
+       margin-top: 100px;
+       height: 600px;
+       width: 80%;
+       margin-top: 2rem;
+    }
+
+    .section-cards__assunto___viagem {
+        width: 100%;
+    }
+
+    .section-cards__assunto___festa {
+        width: 100%;
+    }
+
+    .section-cards__assunto___estudos {
+        width: 100%;
+    }
+
+    .sobre {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sobre__texto {
+        width: 80vw
+    }
+
+    .sobre__imagem {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+    }
+
+    .sobre__imagem .sobre__imagem___amigos {
+        width: 30%;
+        height: 200px;   
+    }
+}
+
+@media screen and (max-width: 882px) {
+    .principal {
+        flex-direction: column-reverse;
+        padding: 200px;
+    }
+
+    .principal__texto {
+        width: 600px;
+    }
+
+    .principal__texto h2 {
+        font-size: 3rem;
+        margin-bottom: 7rem;
+    }
+
+    .principal__texto h4 {
+        font-size: 1.4rem;
+    }
+
+    .principal__imagem .principal__imagem___amigos {
+        width: 600px;
+        padding-right: 4rem;
+        border-radius: 0;
+    }
+
 }
 
 @media screen and (max-width: 911px) {
-    .principal__texto {
-        
+    .principal {
+        width: auto;
+        height: 250px;
     }
 
-    .principal__imagem___amigos {
+    .principal__texto___botao {
+        margin-top: -3rem;
+        padding: 10px 50px;
+    }
+
+     .principal__imagem___amigos {
         width: 400px;
     }
 
